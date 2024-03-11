@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Site</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            background-image: url(pics/6.jpg);
+        }
+
+        nav {
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            padding: 0.5em;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 1em;
+            margin: 0 0.5em ;
+        }
+
+        #services{
+            background-image: url(pics/5.jpg);
+            color: #fd0000;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive Styles */
+
+        @media only screen and (max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+        }
+
+        /* Projects Styles */
+
+        #Projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            background-image: url(pics/4.jpg);
+            background-size: 100%;
+            /* opacity: 0.5; */
+            /* background-repeat: no-repeat; */
+            
+        }
+
+        .Projects-item {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .Projects-item img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Construction Site</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#Projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to our Construction Site</h2>
+        <p>Jagadeesh site</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Construction Planning</li>
+            <li>Building Design</li>
+            <li>Project Management</li>
+            <li>Renovation</li>
+            <li>Site Inspection</li>
+        </ul>
+    </section>
+
+    <section id="Projects">
+            <h2>Projects</h2>
+            <div class="Projects-item">
+                <img src="pics/1.jpeg" alt="Project 1">
+                <p>Project 1 Description</p>
+            </div>
+            <div class="Projects-item">
+                <img src="pics/2.jpeg" alt="Project 2">
+                <p>Project 2 Description</p>
+            </div>
+            <!-- Add more Projects items as needed -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or need a quote? Reach out to us!</p>
+        <!-- Add a contact form or contact details -->
+    </section>
+
+    <!-- <footer>
+        <p>&copy; 2024 Construction Site. All rights reserved.</p>
+    </footer> -->
+</body>
+
+</html>
